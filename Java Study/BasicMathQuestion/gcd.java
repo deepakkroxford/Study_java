@@ -2,9 +2,11 @@ package BasicMathQuestion;
 
 public class gcd{
     public static void main(String[] args) {
-        int a =9;
-        int b = 12 ;
+        int a =11;
+        int b = 13 ;
 
+        int ogr1 = a;
+        int org2 = b;
         while(a!=b)
         {
             if(a==0)
@@ -22,5 +24,10 @@ public class gcd{
             }
         }
         System.out.println(a);
+
+        int lcm =(ogr1*org2)/a;
+        System.out.println(lcm);
+
+
     }
 }

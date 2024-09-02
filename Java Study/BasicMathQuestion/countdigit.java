@@ -2,7 +2,7 @@ package BasicMathQuestion;
 
 public class countdigit {
     public static void main(String[] args) {
-        int n = 1322345;\
+        int n = 1322345;
 
     //optimized 
     int count1 = (int) (Math.log10(n))+1;
