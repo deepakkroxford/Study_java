@@ -14,8 +14,6 @@ public class countdigit {
         //output = 5;
         while(n!=0)
         {
-            int rem = n%10;
-          
             n=n/10;
             count++;
         }
