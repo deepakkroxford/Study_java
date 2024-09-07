@@ -2,7 +2,7 @@
 
 2.Intermediate Smallest element
 
-3.Move all zero to end ,Move all zero to end---> https://www.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1
+3.Move all zero to end , Move all zero to end---> https://www.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1
 
 4.Rotation by k -->// https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1,   https://www.geeksforgeeks.org/problems/reversal-algorithm5340/1
 
@@ -15,3 +15,13 @@
 8.find the K rotation ---> https://www.geeksforgeeks.org/problems/rotation4723/1?page=3&category=Arrays&sortBy=submissions
 
 9.Remove Element --->  https://leetcode.com/problems/remove-element/description/
+
+10.Missing and repaeating array --> solved
+
+11.piviot element
+
+12. search and insert
+
+13. palindromic array;
+
+14. Array Leaders  --> solved

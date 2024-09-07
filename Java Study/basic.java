@@ -4,31 +4,6 @@ public class basic {
          final int a =   107654;   // 4byte; 
          
          System.out.println(a);
-         
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         long y = 23421;    //8 byte;
         float f = 3.14f;  //  4byte;
@@ -45,9 +20,8 @@ public class basic {
 
        // float d = 10.6f;
         boolean e = true;
-
-            double x = 5/2f;
-            System.out.println(x);
+        double x = 5/2f;
+        System.out.println(x);
 
 
     }
