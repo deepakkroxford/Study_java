@@ -6,7 +6,7 @@ public class countdigit {
 
     //optimized 
     int count1 = (int) (Math.log10(n))+1;
-    System.out.println("using log base 10 we can also find the number of digit"+count1);
+    System.out.println("using log base 10 we can also find the number of digit   "+count1);
 
 
     //2nd way
