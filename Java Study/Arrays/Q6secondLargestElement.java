@@ -3,7 +3,7 @@ package Arrays;
 
 import java.util.Arrays;
 
-public class secondLargestElement {
+public class Q6secondLargestElement {
     public static void main(String[] args) {
 
         /*

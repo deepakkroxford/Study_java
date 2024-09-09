@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class hashmap {
-    public static void main(String[] args) {
+      static public void main(String[] args) {
        
 
         /*
@@ -15,10 +15,11 @@ public class hashmap {
              7         2
              8         2
              9         3
+
          */ 
 
         int arr[] = {1,2,3,3,4,5,5,5,6,7,7,8,8,89,9,9,9,1,1};
-        HashMap<Integer,Integer> map = new HashMap<>();
+        HashMap<Integer,Integer> map = new HashMap< >();
         for(int i=0;i<arr.length;i++)
         {
             if(!map.containsKey(arr[i]))

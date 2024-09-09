@@ -1,6 +1,6 @@
 package Arrays;
 
-public class PalindromicArray {
+public class Q3PalindromicArray {
     public static void main(String[] args) {
         int arr[] = { 111, 222, 333, 444, 555 };
         int count = 0;

@@ -1,6 +1,6 @@
 package Arrays;
 
-public class largestelementandSmallestElement {
+public class Q7largestelementandSmallestElement {
     public static void main(String[] args) {
         /*
          * Given an array, arr. The task is to find the largest element in it.

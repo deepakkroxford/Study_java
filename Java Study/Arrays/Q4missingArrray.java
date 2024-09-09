@@ -1,6 +1,6 @@
 package Arrays;
 
-public class missingArrray {
+public class Q4missingArrray {
     public static void main(String[] args) {
         /*
          * Missing in Array
