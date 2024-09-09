@@ -1,4 +1,5 @@
-public class countdigit {
+package BasicMathQuestion;
+public class Countdigit22{
     public static void main(String[] args) {
         /*
          * Given a number n. Count the number of digits in n which evenly divide n.
