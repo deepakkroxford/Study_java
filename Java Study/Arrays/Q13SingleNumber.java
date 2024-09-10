@@ -20,8 +20,8 @@ public class Q13SingleNumber {
                 map.put(arr[i], map.get(arr[i])+1);
             }
         }
+        
         int singleNumber=0;
-
         for(var e: map.entrySet())
         {
             if(e.getValue()==1)
