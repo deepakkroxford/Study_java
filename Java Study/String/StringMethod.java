@@ -52,7 +52,7 @@ public class StringMethod {
         // }
 
         // Method -8 CharAt() -- method
-        String xy = "12AmanSingh126";
+        String xy = "12AmanSingh126:,";
         System.out.println(xy.charAt(5)); // n -> output
         ArrayList<Character> ch = new ArrayList<>();
         ArrayList<Character> al = new ArrayList<>();
@@ -82,9 +82,11 @@ public class StringMethod {
         System.out.println(s3);
 
         // Method 10- IndexOf() - it will give the index of the character if the given
-        // character is repeated so it return the first character index
+        // character is repeated so it return the first character index ,
+        //if the character not found then it will return the value -1;
         String str = "Riya Kumari";
         System.out.println(str.indexOf('a'));
+        System.out.println('x');
 
         // Method 11- Compareto() method - it return the three value 0,1,-1
 
