@@ -3,7 +3,7 @@ package String;
 public class StringBuilderImplementation {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
-        System.out.println(sb.capacity()); // the default cappacity of stringBuilder is 16
+        System.out.println(" the capacity of stringbuilder is "+sb.capacity()); // the default cappacity of stringBuilder is 16
 
         StringBuilder s = new StringBuilder("Deepak");
         System.out.println(s.capacity()); // now the capacity of stringbuilder is increases to 22;
@@ -30,6 +30,9 @@ public class StringBuilderImplementation {
           */
           StringBuilder str = new StringBuilder();
           str.append("Hello");
+          str.append("vishal");
+          str.append("boss");
+          
         //   str.insert(2, 'x');
         //   System.out.println(str);
         //   str.deleteCharAt(0);
@@ -41,6 +44,19 @@ public class StringBuilderImplementation {
         System.out.println(str);
         System.out.println( str.reverse());
         
+
+
+
+        //How to get each cahracter in the string 
+
+        String x ="VisHal";
+        
+        for(int i=0;i<x.length();i++)
+        {
+            System.out.println(x.charAt(i));
+        }
+
+        System.out.println(x);
 
     }
 }

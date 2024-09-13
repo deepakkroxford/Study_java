@@ -81,18 +81,18 @@ public class StringMethod {
         String s3 = v0 + " " + v1 + " " + v2;
         System.out.println(s3);
 
+
         // Method 10- IndexOf() - it will give the index of the character if the given
         // character is repeated so it return the first character index ,
         //if the character not found then it will return the value -1;
-        String str = "Riya Kumari";
-        System.out.println(str.indexOf('a'));
+        String str = "Deepak";
+        System.out.println(str.indexOf('e'));
         System.out.println('x');
 
         // Method 11- Compareto() method - it return the three value 0,1,-1
-
-        String str1 = "abc";
+        String str1 = "bbc";
         String str2 = "bbc";
-        System.out.println(str1.compareTo(str2)); // it give the value -1;
+        System.out.println(str2.compareTo(str1)); // it give the value -1;
         /*
          * it check the string lexographically and compare them if the both string is
          * same then return the value 0
@@ -108,7 +108,6 @@ public class StringMethod {
         System.out.println(str3.contains("aman")); //false
 
         //Method 13 - Concat Method
-
         String str4 = "Hello";
         String str5="World";
         String xx = str4.concat(str5); 
