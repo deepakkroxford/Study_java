@@ -27,7 +27,7 @@ public class Implementation {
         ans.add(3, 10000);
         
         System.out.println(ans);
-        ans.removeLast();
+    
         System.out.println(ans);
         System.out.println(ans.size());
 
