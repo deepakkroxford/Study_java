@@ -8,6 +8,8 @@ public class Q1 {
         int b = 20;
 
         System.out.println("Sum is: " + a + b);
+        System.out.println(a + b+"java");
+
         System.out.println("Sum is: " + (a + b));
 
         System.out.println(10 * 10 + "Hello");
