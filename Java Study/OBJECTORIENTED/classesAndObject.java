@@ -25,7 +25,7 @@ class Student {
 
 }
 
-public class BASIC {
+public class classesAndObject {
     public static void main(String[] args) {
 
         // this is how we create the object of the student class
