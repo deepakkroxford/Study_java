@@ -1,4 +1,4 @@
-package OBJECTORIENTED;
+package OBJECTORIENTED.ClassesAndObject;
 
 class Student {
 

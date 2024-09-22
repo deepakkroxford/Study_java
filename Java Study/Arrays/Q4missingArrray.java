@@ -1,10 +1,24 @@
 package Arrays;
 
+
 public class Q4missingArrray {
+      // Note that the size of the array is n-1
+        public int missingNumber(int n, int arr[]) {
+
+        // Your Code Here
+        int actualsum = n * (n + 1) / 2;// 5*(5+1)/2; = 15;
+        int sum = 0;
+        for (int i = 0; i < n - 1; i++) {
+            sum = sum + arr[i];
+        }
+        int ans = actualsum - sum;
+        return ans;
+
+    }
     public static void main(String[] args) {
         /*
          * Missing in Array
-         * Difficulty: EasyAccuracy: 29.59%Submissions: 1.2M Points: 
+         * Difficulty: EasyAccuracy: 29.59%Submissions: 1.2M Points:
          * 
          * Given an array arr of size n−1 that contains distinct integers in the range
          * of 1 to n (inclusive), find the missing element. The array is a permutation
@@ -12,7 +26,7 @@ public class Q4missingArrray {
          * 
          * Examples:
          * 
-         * Input: n = 5, arr[] = [1,2,3,5] == 15-11=4 
+         * Input: n = 5, arr[] = [1,2,3,5] == 15-11=4
          * Output: 4
          * Explanation : All the numbers from 1 to 5 are present except 4.
          * 
@@ -28,26 +42,10 @@ public class Q4missingArrray {
          * 
          */
 
-         class Solution {
-
-            // Note that the size of the array is n-1
-            int missingNumber(int n, int arr[]) {
-        
-                // Your Code Here
-                int actualsum = n*(n+1)/2;// 5*(5+1)/2; = 15;
-                int sum=0;
-                for(int i=0;i<n-1;i++)
-                {
-                    sum = sum+arr[i];
-                }
-                int ans = actualsum-sum;
-                return ans;
-                
-            }
-        }
-
-
-
+        int arr[] = { 1, 2, 3,5};
+        int n = arr.length;
+        Q4missingArrray s1 = new Q4missingArrray();
+        System.out.println(s1.missingNumber(n+1, arr));
 
     }
 }

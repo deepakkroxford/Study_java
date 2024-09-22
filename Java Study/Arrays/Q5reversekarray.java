@@ -30,5 +30,9 @@ public class Q5reversekarray {
         int k = sc.nextInt();
         k = k % n;
 
+        
+        Q4missingArrray s3 = new Q4missingArrray();
+       
+
     }
 }

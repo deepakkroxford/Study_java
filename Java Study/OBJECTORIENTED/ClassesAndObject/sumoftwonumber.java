@@ -1,4 +1,4 @@
-package OBJECTORIENTED;
+package OBJECTORIENTED.ClassesAndObject;
 class Sum{
 
     // public void sumoftwonum(int a, int b)
