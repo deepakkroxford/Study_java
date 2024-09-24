@@ -21,6 +21,17 @@ class meth{
     }
 
 
+    //we can overload the static method but we can not override the static method because the static 
+    //method belong the class not the instance of the class 
+    public static int su(int a, int b){
+        return a+b;
+    }
+    public static int su(int a, int b, int c)
+    {
+        return a+b+c;
+    }
+
+
 
 
 }
