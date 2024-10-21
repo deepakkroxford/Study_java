@@ -22,5 +22,22 @@ public class Q16StockBuyAndSell {
             maxprofit=0;
         }
         System.out.println(maxprofit);
+
+
+        //Now we will solve using the O(n) time complexity
+
+        int bestbuy = arr[0];
+        int maximumprofit =0;
+        for(int i=1;i<arr.length;i++)
+        {
+            if(bestbuy<arr[i-1])
+            {
+                
+            }
+            else{
+                bestbuy = Math.min(arr[i], bestbuy);
+            }
+        }
+
     }
 }

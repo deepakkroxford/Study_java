@@ -12,13 +12,16 @@ public class arothmatic {
       * multiplication
       / division
       % modulus
+
+
       */
 
       int a =10;
       int b = 10;
 
-      a+=a+20+10;// a= a+a+20
+      a=a+20+10;// a= a+a+20
       b+=b+30;
+      a=a-b;
       System.out.println(a);
       System.out.println(b);
       //addition 
@@ -42,8 +45,14 @@ public class arothmatic {
        System.out.println(a>=b); //false
        System.out.println(a!=b);//false
 
-
+    
+      
        
       //System.out.println("subtraction of a and b -> "+c);
     }
 }
+/*
+ * what is java?
+ * sol -> java is a object oriented language .
+ * Java is a general purpose , compiled, interpretade , static;
+ */
