@@ -1,9 +1,8 @@
 package LinkedListss;
-
+import java.util.*;
 /*
  * Fist we have to create the class Node
  */
-
 class Node {
     int data;
     Node next;
@@ -14,11 +13,9 @@ class Node {
     }
 
 }
-
 class Linked {
     public static Node head;
     public static Node tail;
-    int size = 0;
 
     public void insertFist(int data) {
         // 2->1
@@ -33,7 +30,7 @@ class Linked {
             head = newNode;
 
         }
-        size++;
+
     }
 
     public void insetAdEnd(int data) {
@@ -45,7 +42,51 @@ class Linked {
             tail.next = newNode;
             tail = newNode;
         }
-        size++;
+
+    }
+
+    // insert at any position
+    void insertAtpos(int ind, int value) {
+
+        Node newNode = new Node(value);
+        if (ind > size() || ind < 0) {
+            System.out.println("Invalid position");
+            return;
+        } else if (ind == 0) {
+            insertFist(value);
+        } else if (ind == size()) {
+            insetAdEnd(value);
+        } else {
+            Node temp = head;
+            for (int i = 0; i < ind - 1; i++) {
+                temp = temp.next;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+    }
+
+    // delete at any position
+
+    int deleteAtPos(int ind) {
+        int val = 0;
+        if (ind > size() || ind < 0) {
+            System.out.println("Invalid position");
+            return -1;
+        } else if (ind == 0) {
+            val = deleteAtfirst();
+        } else if (ind == size()) {
+            val = deleteAtEnd();
+        } else {
+            Node temp = head;
+            for (int i = 0; i < ind - 1; i++) {
+                temp = temp.next;
+            }
+            val = temp.next.data;
+            temp.next = temp.next.next;
+
+        }
+        return val;
     }
 
     public int deleteAtfirst() {
@@ -68,7 +109,7 @@ class Linked {
             head = temp.next;
             temp.next = null;
         }
-        size--;
+
         return val;
     }
 
@@ -90,7 +131,7 @@ class Linked {
             prev.next = null;
             tail = prev;
         }
-        size--;
+
         return val;
     }
 
@@ -109,23 +150,95 @@ class Linked {
         }
     }
 
-    public void lengths() {
-        System.out.println("the size " + size);
+    int getElementAtpos(int idx) {
+        Node temp = head;
+        for (int i = 1; i <= idx; i++) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
+    int size() {
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
     }
 
 }
 
 public class Implementation {
     public static void main(String[] args) {
-        Linked l1 = new Linked();
-        l1.insertFist(12);
-        l1.insertFist(15);
-        l1.insertFist(20);
-        l1.insetAdEnd(66);
-        System.out.println("the delete data is " + l1.deleteAtfirst());
-        System.out.println("the delete data at end is"+l1.deleteAtEnd());
-        l1.printLinkedlist();
-        l1.lengths();
+        Scanner scanner = new Scanner(System.in);
+        Linked ll = new Linked();
+
+        while (true) {
+            System.out.println("Choose an operation:");
+            System.out.println("1: Insert at beginning");
+            System.out.println("2: Insert at end");
+            System.out.println("3: InsertAtPos");
+            System.out.println("4: Delete from beginning");
+            System.out.println("5: Delete from end");
+            System.out.println("6: Display list");
+            System.out.println("7: Size of list");
+            System.out.println("8: Delete from any postion");
+            System.out.println("9: getElemnt");
+            System.out.println("10: Exit");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter value to insert at beginning:");
+                    int val1 = scanner.nextInt();
+                    ll.insertFist(val1);
+                    break;
+                case 2:
+                    System.out.println("Enter value to insert at end:");
+                    int val2 = scanner.nextInt();
+                    ll.insetAdEnd(val2);
+                    break;
+                case 3:
+                    System.out.println(" Enter the pos ");
+                    int pos = scanner.nextInt();
+                    System.out.println("enter the value");
+                    int val3 = scanner.nextInt();
+                    ll.insertAtpos(pos, val3);
+                    break;
+                case 4:
+                    ll.deleteAtfirst();
+                    break;
+                case 5:
+                    ll.deleteAtEnd();
+                    break;
+                case 6:
+                    ll.printLinkedlist();
+                    break;
+                case 7:
+                    System.out.println(ll.size());
+                    break;
+                case 8:
+                    System.out.println("enter the index");
+                    int idx = scanner.nextInt();
+                    System.out.println(ll.deleteAtPos(idx));
+                    break;
+
+                case 9:
+                    System.out.println("enter the index");
+                    int idxx = scanner.nextInt();
+                    System.out.println(ll.getElementAtpos(idxx));
+                    break;
+                case 10:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+        }
 
     }
 }
