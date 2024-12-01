@@ -6,4 +6,3 @@
 6. Display the Longest Name in the string --> https://www.geeksforgeeks.org/problems/display-longest-name0853/1?page=1&category=Strings&difficulty=Basic&sortBy=submissions
 7. Reverse a String --> https://www.geeksforgeeks.org/problems/java-reverse-a-string0416/1?page=1&category=Strings&difficulty=Basic&sortBy=submissions
 8. Remove character --> https://www.geeksforgeeks.org/problems/remove-character3815/1?page=1&category=Strings&difficulty=Basic&sortBy=submissions
-9. 
